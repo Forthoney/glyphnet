@@ -12,6 +12,6 @@ glyphnet.yml
 classification_VFinal.ipynb
 createDataset.ipynb
 dataset_preprocessing.ipynb
-model.ipynb
-util.ipynb
 util_img.ipynb
+__pycache__/
+*.py[cod]
