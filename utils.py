@@ -1,25 +1,15 @@
 import cv2
 import numpy as np
 import os
-import shutil
-import datetime
-import math
-import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 from sklearn import preprocessing
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import f1_score, precision_score, recall_score, confusion_matrix, accuracy_score
 
 # TensorFlow and tf.keras
 import tensorflow as tf
-from tensorflow import keras 
 from keras.api.keras.utils import to_categorical
-from keras.api.keras.models import Sequential, Model
-from keras.api.keras.layers import Input, Dense, Conv2D, MaxPool2D , Flatten, MaxPooling2D, BatchNormalization, Activation, Add, ReLU, SeparableConv2D, GlobalAvgPool2D, Dropout, add, GlobalAveragePooling2D
-from keras.api.keras.utils import plot_model
-from keras.api.keras.optimizers import SGD, Adam
-from keras.api.keras.callbacks import ModelCheckpoint, CSVLogger, LearningRateScheduler
-from keras.api.keras.preprocessing.image import ImageDataGenerator
+from keras.api.keras.models import Model
+from keras.api.keras.layers import Input, Dense, Conv2D, MaxPooling2D, BatchNormalization, Activation, SeparableConv2D, Dropout, GlobalAveragePooling2D
+from keras.api.keras.optimizers import Adam
 from tensorflow.keras import regularizers
 
 allowed_labels = ['D2', 'D21', 'D36', 'D4', 'D46', 'D58', 'E23', 'E34', 'F31', 'F35', 'G1', 'G17',
